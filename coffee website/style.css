@@ -1,0 +1,619 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff8f5;
+    color: #333;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================= NAVBAR ================= */
+
+header {
+    height: 70px;
+    background: #48101b;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 9%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #eaa04c;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 520px;
+
+    background: #48101b;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 60px 10%;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h4 {
+    color: #eaa04c;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 40px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.hero-text h1 span {
+    color: #eaa04c;
+}
+
+.hero-text p {
+    color: #ddd;
+    font-size: 13px;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 11px 24px;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.order {
+    background: #eaa04c;
+    color: #351019;
+}
+
+.contact-btn {
+    color: white;
+    border: 1px solid white;
+}
+
+.order:hover {
+    background: white;
+}
+
+.contact-btn:hover {
+    background: white;
+    color: #48101b;
+}
+
+.hero-img {
+    width: 42%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img img {
+    width: 360px;
+    height: 360px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* ================= COMMON ================= */
+
+section {
+    padding: 80px 10%;
+}
+
+section h5 {
+    color: #a5582a;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+section h2 {
+    text-align: center;
+    color: #351019;
+    font-size: 28px;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    background: #fff8f5;
+}
+
+.about-img {
+    width: 45%;
+}
+
+.about-img img {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin: auto;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text h5 {
+    text-align: left;
+}
+
+.about-text h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 12px;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social span {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    background: #48101b;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.social span:hover {
+    background: #eaa04c;
+    color: #48101b;
+}
+
+
+/* ================= MENU ================= */
+
+.menu {
+    background: #242424;
+}
+
+.menu h5 {
+    color: #eaa04c;
+}
+
+.menu h2 {
+    color: white;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 35px;
+}
+
+.menu-card {
+    text-align: center;
+    color: white;
+}
+
+.menu-card img {
+    width: 160px;
+    height: 160px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin: auto;
+
+    transition: 0.3s;
+}
+
+.menu-card:hover img {
+    transform: scale(1.08);
+}
+
+.menu-card h3 {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.menu-card p {
+    color: #aaa;
+    font-size: 11px;
+    line-height: 1.7;
+
+    max-width: 220px;
+    margin: 8px auto;
+}
+
+
+/* ================= TESTIMONIAL ================= */
+
+.testimonial {
+    background: #fff8f5;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: white;
+
+    text-align: center;
+
+    padding: 30px 25px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-card img {
+    width: 75px;
+    height: 75px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin: auto;
+}
+
+.testimonial-card h3 {
+    font-size: 15px;
+    margin: 12px 0;
+}
+
+.testimonial-card p {
+    color: #777;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.stars {
+    color: #eaa04c;
+    margin-top: 12px;
+    letter-spacing: 2px;
+}
+
+
+/* ================= GALLERY ================= */
+
+.gallery {
+    background: white;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 190px;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    background: #f6ebe5;
+
+    display: flex;
+
+    gap: 80px;
+}
+
+.contact-info {
+    width: 50%;
+}
+
+.contact-info h5 {
+    text-align: left;
+}
+
+.contact-info h2 {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    color: #666;
+    font-size: 13px;
+    margin: 16px 0;
+}
+
+form {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    font-family: inherit;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #48101b;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+form button {
+    width: 110px;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #48101b;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #eaa04c;
+    color: #351019;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #242424;
+
+    color: #aaa;
+
+    padding: 25px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 11px;
+}
+
+footer a {
+    color: #aaa;
+    margin-left: 15px;
+}
+
+footer a:hover {
+    color: #eaa04c;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        padding: 60px 6%;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .menu-grid,
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 650px) {
+
+    header {
+        height: auto;
+        padding: 20px;
+
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+
+        padding: 60px 20px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        margin: auto;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .hero-img {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .hero-img img {
+        width: 270px;
+        height: 270px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-img,
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text h5,
+    .about-text h2 {
+        text-align: center;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .menu-grid,
+    .testimonial-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-info,
+    form {
+        width: 100%;
+    }
+
+    .contact-info h5,
+    .contact-info h2 {
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
